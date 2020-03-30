@@ -114,7 +114,7 @@
     <spark.bin.download.url>
       https://archive.apache.org/dist/spark/spark-3.0.0-preview2/spark-3.0.0-preview2-bin-hadoop3.2.tgz
     </spark.bin.download.url>
-    <spark.bin.name>3.0.0-preview2-bin-hadoop3.2</spark.bin.name>
+    <spark.bin.name>spark-3.0.0-preview2-bin-hadoop3.2</spark.bin.name>
     <!--  used for testing, NCSARequestLog use it for access log  -->
     <livy.log.dir>${basedir}/target</livy.log.dir>
 
@@ -569,6 +569,12 @@
         <groupId>net.sf.py4j</groupId>
         <artifactId>py4j</artifactId>
         <version>${py4j.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>2.5.2</version>
       </dependency>
 
       <!-- we need a version > 1.7.13 because of SLF4J-324 -->
